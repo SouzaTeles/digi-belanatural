@@ -1,0 +1,67 @@
+/*
+    Desenvolvimento: Lucas Teles - github.com/souzateles
+    Agencia: Digicriativa - www.digicriativa.com.br
+*/
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  height: 100px;
+}
+.header__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header__nav ul {
+  margin: 0;
+  display: flex;
+}
+.header__nav ul li {
+  list-style: none;
+  border-bottom: solid 3px #ff0000;
+}
+.header__nav ul li a {
+  padding-bottom: 15px;
+  display: inline-block;
+}
+.inicio {
+  background-color: green;
+  height: 100vh;
+}
+.inicio__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sobre {
+  height: 100vh;
+}
+.sobre__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.depoimentos__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.depoimentos__title {
+  color: #ff0000;
+}
+.contato__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.contato__title {
+  color: #ff0000;
+}
+.footer__container {
+  width: 1200px;
+  margin: 0 auto;
+}
