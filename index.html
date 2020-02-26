@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/public/static/css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="#" alt="Bella Você Natural" class="header__logo">
+            <img src="public/static/img/bella-logo.png" alt="Bella Você Natural" class="header__logo">
             <nav class="header__nav">
                 <ul>
                     <li><a href="">Incio</a></li>
-                    <li><a href="">Seja você natural</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="">Bella Você Natural</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Seja nossa revendedora</a></li>
+                    <li><a href="">Fale conosco</a></li>
+                    <li><a href="">Trabalhe conosco</a></li>
                 </ul>
             </nav>
             <div class="header__social">
@@ -33,6 +33,14 @@
         <div class="sobre__container">
             <div class="sobre__content">
                 <h2 class="sobre__title"></h2>
+                <h3 class="sobre__shadow"></h3>
+                <h4 class="sobre__description">Este sonho, começou a ser realizado em 2013 em uma pequena loja no Centro de Vilar dos Telles, município de São João de Meriti / RJ, reconhecido como um centro de comércio voltado a revenda. </h4>
+                <p class="sobre__text">
+                    Comercializávamos Cosméticos Fitoterápicos e Produtos Naturais para revenda. Comprávamos direto das fábricas, em vários estados do Brasil, principalmente Minas Gerais e Goiás. Passados alguns anos, mudamos de loja, por uma melhor localizada, abrimos outra no Centro de Nova Iguaçu, ambas no Estado do Rio de Janeiro. Viramos referência em nosso segmento. 
+                    <br><br>
+                    Em 2018 passamos a desenvolver nossos produtos. Criamos assim, alguns diferenciais. Com a experiência “atrás do balcão” sabemos exatamente o que as clientes precisam e querem comprar. Enquanto as indústrias desenvolvem produtos no escuro ou com atraso do modismo, nós estamos sempre a frente de todos nossos concorrentes. Outro diferencial é a qualidade e o preço final de nossos produtos. Sempre mais em conta.
+
+                </p>
             </div>
         </div>
     </section>
@@ -44,18 +52,57 @@
         </div>
     </section>
     <section class="dicas">
-
+        <div class="dicas__container">
+            <div class="dicas__img"></div>
+            <div class="dicas__content">
+                <h2 class="dicas__title">Dicas da Bella</h2>
+                <h3 class="dicas__shadow">Cada detalhe importa</h3>
+                <h4 class="dicas__dica">Como ter uma pele saudável e bonita </h4>
+                <p class="dicas__text">
+                    Com o passar dos anos é natural que a pele vá perdendo sua elasticidade e luminosidade, tornando-se seca e sem viço. Isso acontece porque a capacidade do corpo de reter água e a produzir colágeno vai diminuindo conforme os anos vão passando. Alguns hábitos e cuidados diários podem ajudar a prevenir e retardar os impactos do tempo, confira:Hidratação deve ser uma regra
+                    <br><br>
+                    Eles são os melhores amigos da pele macia, luminosa e saudável, pois além de devolver água para o tecido, formam uma camada de proteção, tornando mais fácil a retenção da hidratação. Uma pele bem hidratada pode te proteger inclusive de micro-organismos que causam infecções, pois dificulta a penetração na barreira cutânea.
+                    <br><br>
+                    
+                    Os hidratantes funcionais, diferente dos hidratantes comuns, são capazes de atingir até a 3° camada da derme, evitando a perda da água corporal. Eles atuam na restauração da barreira cutânea e em sua fórmula contém componentes que acalmam, restauram e protegem a pele, além de garantirem uma hidratação mais intensa.
+                    <br><br>
+                    
+                    Lembre-se: É importante hidratar a pele diariamente, tanto do rosto, como do restante do corpo, usando produtos específicos para o seu tipo de pele.
+                </p>
+            </div>
+        </div>
     </section>
     <section class="contato">
         <div class="contato__container">
             <div class="contato__content">
                 <h2 class="contato__title">Quer falar com a gente?</h2>
                 <h3 class="contato__subtitle">Sobre o que vamos conversar</h3>
+                <form class="contato__form" action="post">
+                    <hr>
+                    <label for="name">
+                        Nome*:
+                        <input type="text" placeholder="Digite seu nome completo">
+                    </label>
+                    <label for="email">
+                        E-mail*:
+                        <input type="email" placeholder="Digite seu e-mail corretamente">
+                    </label>
+                    <label for="tel">
+                        Telefone*:
+                        <input type="text" placeholder="(  )">
+                    </label>
+                    <label for="message">
+                        Mensagem:
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <small>* campo obrigatório</small>
+                </form>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__container">
+            <img src="/public/static/img/bella-logo.png" alt="Bella Logo">
         </div>
     </footer>
 </body>

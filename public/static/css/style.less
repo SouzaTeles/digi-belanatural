@@ -1,0 +1,181 @@
+/*
+    Desenvolvimento: Lucas Teles - github.com/souzateles
+    Agencia: Digicriativa - www.digicriativa.com.br
+*/
+// Reset
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// fonts
+@font-face {
+  font-family: SFSemi;
+  src: url("../fonts/sf-pro-text-semibold-webfont.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFHeavy;
+  src: url("../fonts/sf-pro-text-heavy-webfont.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFReg;
+  src: url("../fonts/SF-Pro-Text-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFBold;
+  src: url("../fonts/SF-Pro-Text-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Sidaghis;
+  src: url("../fonts/sidaghis.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Variables
+@simple_gray: #727272;
+@dark_gray: #5f5f5f;
+@gray_field: #e8e8e8;
+@simple_red: #ba362b;
+@dark_red: #981d1d;
+// Gerais
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  box-shadow: 0px 0 4px 3px #00000042;
+  position: fixed;
+  background: #fff;
+  &__container {
+    .container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    ul {
+      margin: 0;
+      display: flex;
+      li {
+        list-style: none;
+        border-bottom: solid 3px @simple_red;
+        color: @simple_gray;
+        font-family: SFSemi;
+        font-size: 14px;
+        margin-left: 10px;
+        a {
+          padding-bottom: 15px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.inicio {
+  background-color: green;
+  height: 100vh;
+  &__container {
+    .container;
+  }
+}
+.sobre {
+  height: 100vh;
+  background: url(../img/sobre_background.png);
+  background-size: cover;
+  &__container {
+    .container;
+  }
+}
+.depoimentos {
+  &__container {
+    .container;
+  }
+  &__title {
+    color: @simple_red;
+  }
+}
+.dicas {
+  height: 100vh;
+  background-color: @dark_red;
+  &__container {
+    .container;
+  }
+  &__content {
+    width: 50%;
+    color: #FFF;
+  }
+  &__text {
+    color: #FFF;
+    font-family: SFReg;
+  }
+  &__shadow {
+    opacity: .45;
+    font-size: 83px;
+    white-space: nowrap;
+    font-family: Sidaghis;
+    color: @simple_red;
+  }
+}
+.contato {
+  height: 100vh;
+  background: url(../img/contact-background.png);
+  background-size: cover;
+  &__container {
+    .container;
+  }
+  &__title {
+    color: @simple_red;
+    font-family: SFHeavy;
+    font-size: 42.5px;
+  }
+  &__subtitle {
+    font-family: SFReg;
+    font-size: 20px;
+    color: @dark_gray;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    hr {
+      margin-left: 0;
+      width: 55px;
+      border: none;
+      border-bottom: solid 1px @simple_gray;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      font-family: SFBold;
+      font-size: 12px;
+      color: @dark_gray;
+      max-width: 422px;
+      margin-top: 30px;
+    }
+    input, textarea {
+      padding-left: 15px;
+      margin-top: 15px;
+      border: none;
+      min-height: 42px;
+      border-radius: 5px;
+      background-color: @gray_field;
+    }
+  }
+}
+.footer {
+  &__container {
+    .container;
+  }
+}
