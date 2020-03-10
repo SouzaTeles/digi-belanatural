@@ -311,8 +311,11 @@ p {
     display: flex;
     margin-top: 25px;
     fieldset {
+      user-select: none;
+      cursor: pointer;
       border: none;
       display: inline-block;
+
     }
     label {
       border-radius: 40px;
@@ -331,10 +334,12 @@ p {
     }
     input {
       display: none;
+      cursor: pointer;
       &:checked + label {
         background: #fff;
       }
       &:not(:checked) {
+        cursor: pointer;
         background: none;
         border: solid 1px #00000030;
       }
