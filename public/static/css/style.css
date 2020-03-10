@@ -106,6 +106,7 @@ p {
   background-position-x: right;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-bottom: 137px;
 }
 .sobre__container {
   width: 1200px;
@@ -153,20 +154,26 @@ p {
 }
 .sobre__social {
   display: flex;
+  margin-left: 6px;
+  padding-top: 20px;
   flex-direction: column;
   justify-content: flex-start;
 }
 .sobre__social strong {
+  font-weight: 100;
   font-family: SFReg;
   color: #5f5f5f;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 .sobre__social a {
   color: #ba362b;
+  line-height: 25px;
   font-family: SFBold;
 }
 .depoimentos {
   text-align: center;
-  padding-top: 64px;
+  padding-top: 55px;
   padding-bottom: 88px;
 }
 .depoimentos__container {
@@ -179,7 +186,7 @@ p {
   font-size: 30px;
   text-align: center;
   letter-spacing: -1.5px;
-  margin-bottom: 45px;
+  margin-bottom: 37px;
 }
 .depoimentos__text {
   color: #5f5f5f;
@@ -191,9 +198,10 @@ p {
 }
 .depoimentos__text--bottom {
   font-size: 14px;
+  line-height: 24px;
 }
 .depoimentos__partners {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
   background: gainsboro;
   height: 80px;
@@ -220,19 +228,22 @@ p {
 }
 .dicas__content {
   width: calc(540px);
+  position: relative;
   margin-left: 60px;
   color: #fff;
+  margin-top: 80px;
 }
 .dicas__text {
   color: #fff;
   font-family: SFReg;
   font-size: 14px;
+  line-height: 22.5px;
 }
 .dicas__dica {
   font-family: SFBold;
   font-size: 20px;
   margin-bottom: 36px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .dicas__shadow {
   opacity: 0.45;
@@ -240,14 +251,24 @@ p {
   white-space: nowrap;
   font-family: Sidaghis;
   color: #ba362b;
+  position: absolute;
+  top: -30px;
+  left: -115px;
+  letter-spacing: -3.4px;
 }
 .dicas__title {
   font-family: SFHeavy;
   font-size: 42px;
 }
+.dicas__next {
+  font-family: SFReg;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+}
 .contato {
   height: 100vh;
-  padding-top: 70px;
+  padding-top: 56px;
   background: url(../img/contact-background.png);
   background-size: cover;
 }
@@ -264,7 +285,7 @@ p {
   font-family: SFReg;
   font-size: 20px;
   color: #5f5f5f;
-  margin-top: 32px;
+  margin-top: 20px;
 }
 .contato__form {
   display: flex;
@@ -300,6 +321,9 @@ p {
   font-size: 10px;
   color: #5f5f5f;
   margin-top: 15px;
+}
+.contato__form textarea {
+  padding-top: 15px;
 }
 .contato__options {
   display: flex;
@@ -344,4 +368,49 @@ p {
 .footer__container {
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__info {
+  display: flex;
+  flex-direction: row;
+}
+.footer__info__start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer__info__rights,
+.footer__info__author {
+  font-size: 11px;
+  font-family: SFReg;
+  font-size: #5f5f5f;
+}
+.footer__info__rights a:hover,
+.footer__info__author a:hover {
+  text-decoration: underline;
+}
+.footer__info__rights a {
+  font-family: SFSemi;
+  color: #ba362b;
+}
+.footer__info__tel {
+  font-size: 17px;
+  font-family: SFBold;
+  color: #ba362b;
+}
+.footer__info__address,
+.footer__info__email {
+  font-size: 14px;
+  font-family: SFReg;
+  color: #5f5f5f;
+  font-style: normal;
+}
+.footer__info__social strong {
+  color: #5f5f5f;
+  font-family: SFBold;
 }
