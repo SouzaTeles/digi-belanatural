@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bella Voce Natural</title>
     <link rel="stylesheet" href="/public/static/css/style.css">
+    <link rel="stylesheet" href="/public/static/css/lightslider.css">
 </head>
 <body>
     <header class="header">
@@ -27,7 +28,14 @@
 
     </header>
     <section id="inicio" class="inicio">
-        <div class="inicio__container"></div>
+        <section class="inicio-slides" id="lightslider">
+            <section class="inicio__slide">
+                <div class="inicio__container"></div>
+            </section>
+            <section class="inicio__slide" style="background-color: black;">
+                <div class="inicio__container"></div>
+            </section>
+        </section>
     </section>
     <section id="sobre" class="sobre">
         <div class="sobre__container">
@@ -119,13 +127,14 @@
                     </label>
                     <label for="tel">
                         Telefone*:
-                        <input type="text" placeholder="(  )">
+                        <input id="phone" type="text" placeholder="(  )">
                     </label>
                     <label for="message">
                         Mensagem:
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </label>
                     <small>* campo obrigatório</small>
+                    <button type="submit">Enviar contato <img src="/public/static/img/bella-small-logo-ball.png" alt="Bella Logo"></button>
                 </form>
             </div>
         </div>
@@ -138,6 +147,8 @@
 
     <script src="./public/static/js/jquery.min.js"></script>
     <script src="./public/static/js/jquery.easing.min.js"></script>
+    <script src="./public/static/js/jquery.mask.min.js"></script>
+    <script src="./public/static/js/lightslider.js"></script>
     <script src="./public/static/js/app.js"></script>
 </body>
 </html>

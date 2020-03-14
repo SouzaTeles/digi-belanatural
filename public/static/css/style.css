@@ -82,6 +82,7 @@ p {
   font-size: 14px;
   margin-left: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 .header__nav ul li a {
   height: 100%;
@@ -99,6 +100,9 @@ p {
 .inicio__container {
   width: 1200px;
   margin: 0 auto;
+}
+.inicio__slide {
+  height: 100vh;
 }
 .sobre {
   height: 100vh;
@@ -294,6 +298,35 @@ p {
   min-height: 42px;
   border-radius: 5px;
   background-color: #e8e8e8;
+  resize: none;
+}
+.contato__form input:invalid,
+.contato__form textarea:invalid {
+  color: #ba362b;
+}
+.contato__form button {
+  background: #ba362b;
+  border: none;
+  border-radius: 30px;
+  font-family: SFBold;
+  color: #f9f9f9;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .3s;
+}
+.contato__form button:hover {
+  filter: brightness(1.2);
+}
+.contato__form button img {
+  border: solid 2px white;
+  border-radius: 50%;
+}
+.contato__form textarea {
+  padding-top: 15px;
 }
 .contato__form small {
   font-family: SFReg;

@@ -5,4 +5,12 @@ $(document).ready(function(){
             scrollTop: $(selector).offset().top - 130
         }, 800, 'easeInOutExpo');
     })
+    $('#phone').mask('(99) 99999-9999')
+
+    $('#lightslider').lightSlider({
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+    });
+
 })
