@@ -6,6 +6,8 @@
     <title>Bella Voce Natural</title>
     <link rel="stylesheet" href="/public/static/css/style.css">
     <link rel="stylesheet" href="/public/static/css/lightslider.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -22,15 +24,27 @@
                 </ul>
             </nav>
             <div class="header__social">
-                
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
             </div>
         </div>
-
     </header>
     <section id="inicio" class="inicio">
-        <section class="inicio-slides" id="lightslider">
+        <section class="inicio-slides" id="lightslider-1">
             <section class="inicio__slide">
-                <div class="inicio__container"></div>
+                <div class="inicio__container">
+                    <img src="/public/static/img/sample-product.jpg" alt="" class="slide__image">
+                    <div class="slide__content">
+                        <span class="slide__category">Massagem</span>
+                        <h2 class="slide__title">Cartilagem de tubarão</h2>
+                        <h3 class="slide__subtitle">Com 20 ervas</h3>
+                        <p class="slide__text">Super forte. Com extrato de ômega 3. Seu uso oferece absorção rápida e ação refrescante, proporcionando através da massagem, sensação de bem estar e conforto.</p>
+                    </div>
+                </div>
             </section>
             <section class="inicio__slide" style="background-color: black;">
                 <div class="inicio__container"></div>
@@ -53,12 +67,12 @@
                     <img src="./public/static/img/bella-ball-logo.png" alt="Bella Natural Logo" class="sobre__logo">
                     <div class="sobre__social">
                         <strong>Siga-nos:</strong>
-                        <a href="">
-                            <img src="" alt="">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
                             Instagram: @bellavocenatural
                         </a>
-                        <a href="">
-                            <img src="" alt="">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
                             Facebook: @bellavocenatural
                         </a>
                     </div>
@@ -69,8 +83,16 @@
     <section id="depoimentos" class="depoimentos">
         <div class="depoimentos__container">
             <h2 class="depoimentos__title">O que estão falando de nós</h2>
-            <p class="depoimentos__text depoimentos__text--top">“Produtos naturais fazem sucesso na baixada</p>
-            <p class="depoimentos__text depoimentos__text--bottom"> Bella Você Natural conquista clientela e vira referência entre grandes e pequenas revendedoras”</p>
+            <div class="depoimentos__slides" id="lightslider-2">
+                <div class="depoimentos__slide">
+                    <p class="depoimentos__text depoimentos__text--top">“Produtos naturais fazem sucesso na baixada</p>
+                    <p class="depoimentos__text depoimentos__text--bottom"> Bella Você Natural conquista clientela e vira referência entre grandes e pequenas revendedoras”</p>
+                </div>
+                <div class="depoimentos__slide">
+                    <p class="depoimentos__text depoimentos__text--top">“Produtos naturais fazem sucesso na baixada (2)</p>
+                    <p class="depoimentos__text depoimentos__text--bottom"> Bella Você Natural conquista clientela e vira referência entre grandes e pequenas revendedoras” (2)</p>
+                </div>
+            </div>
             <div class="depoimentos__partners"></div>
         </div>
     </section>
@@ -134,24 +156,35 @@
                         Mensagem:
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </label>
-                    <small>* campo obrigatório</small>
                     <button type="submit">Enviar contato <img src="/public/static/img/bella-small-logo-ball.png" alt="Bella Logo"></button>
+                    <small>* campo obrigatório</small>
                 </form>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__container">
-            <img src="/public/static/img/bella-logo.png" alt="Bella Logo">
+            <a href="#">
+                <img src="/public/static/img/bella-logo.png" alt="Bella Logo">
+            </a>
             <div class="footer__info">
                 <div class="footer__info__start">
                     <a class="footer__info__tel" href="tel:+552126675190">(21) 2667-5190</a>
                     <address class="footer__info__address">Av. Lúcio Meira 350 sala 702 - Rio de Janeiro/RJ</address>
                     <a class="footer__info__email" href="mailto:contato@bellavocenatural.com.br">contato@bellavocenatural.com.br</a>
                 </div>
+                <hr class="footer__info__separator">
                 <div class="footer__info__end">
                     <div class="footer__info__social">
-                        <strong>Siga-nos:</strong>
+                    
+                    <strong>Siga-nos:
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </strong>
                         <p class="footer__info__rights">&copy; Copyright 2020 - <a href="#">Bella Você Natural</a> - Todos os direitos reservados.  </div>
                         <p class="footer__info__author">Desenvolvimento: <a href="http://digicriativa.com.br">www.digicriativa.com.br</a> </p>
                     </div>
@@ -159,11 +192,13 @@
             </div>
         </div>
     </footer>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/brands.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="./public/static/js/jquery.min.js"></script>
     <script src="./public/static/js/jquery.easing.min.js"></script>
     <script src="./public/static/js/jquery.mask.min.js"></script>
     <script src="./public/static/js/lightslider.js"></script>
     <script src="./public/static/js/app.js"></script>
+    
 </body>
 </html>

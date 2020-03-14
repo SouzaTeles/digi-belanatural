@@ -7,7 +7,12 @@ $(document).ready(function(){
     })
     $('#phone').mask('(99) 99999-9999')
 
-    $('#lightslider').lightSlider({
+    $('#lightslider-1').lightSlider({
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+    });
+    $('#lightslider-2').lightSlider({
         item: 1,
         loop: true,
         slideMargin: 0,

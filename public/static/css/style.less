@@ -36,8 +36,20 @@ p {
   font-style: normal;
 }
 @font-face {
+  font-family: SFMedium;
+  src: url("../fonts/SF-Pro-Text-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: SFBold;
   src: url("../fonts/SF-Pro-Text-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFLight;
+  src: url("../fonts/SF-Pro-Text-Light.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -55,6 +67,8 @@ p {
 @semiwhite: #f9f9f9;
 @simple_red: #ba362b;
 @dark_red: #981d1d;
+
+@fullscreen: ~"calc(100vh - 131px)";
 // Gerais
 
 .container {
@@ -67,7 +81,7 @@ p {
   box-shadow: 0px 0 4px 3px #00000042;
   position: fixed;
   background: #fff;
-  z-index: 1;
+  z-index: 100;
   &__container {
     .container;
     height: 100%;
@@ -103,15 +117,65 @@ p {
       }
     }
   }
+  &__social {
+    color: @simple_red;
+    font-size: 21px;
+  }
 }
 .inicio {
   background-color: green;
-  height: 100vh;
+  height: @fullscreen;
+  padding-top: 131px;
   &__container {
     .container;
+    height: @fullscreen;
+    display: flex;
   }
-  &__slide {
-    height: 100vh;
+  // &__slide {
+  // }
+}
+.slide {
+  &__image {
+    height: 100%;
+    filter: drop-shadow(0 1px 2px #00000077);
+  }
+  &__content {
+    margin-top: 14.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__category {
+    text-transform: uppercase;
+    font-family: SFSemi;
+    color: #babd5c;
+    background: #21201b;
+    font-size: 18px;
+    display: inline-block;
+    width: min-content;
+    padding: 2px 10px;
+  }
+  &__title {
+    color: #4a443c;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-family: SFHeavy;
+    margin-top: 8px;
+    white-space: nowrap;
+  }
+  &__subtitle {
+    color: #4a443c;
+    font-size: 42px;
+    font-family: SFLight;
+    white-space: nowrap;
+    line-height: 34px;
+    font-weight: 100;
+  }
+  &__text {
+    color: #4a443c;
+    font-size: 14px;
+    font-family: SFMedium;
+    margin-top: 23px;
+    line-height: 21px;
   }
 }
 .sobre {
@@ -121,7 +185,6 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 137px;
-
   &__container {
     .container;
     width: 1100px;
@@ -182,6 +245,13 @@ p {
       color: @simple_red;
       line-height: 25px;
       font-family: SFBold;
+      font-size: 14px;
+      svg {
+        font-size: 20px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -342,13 +412,19 @@ p {
       width: min-content;
       white-space: nowrap;
       cursor: pointer;
-      transition: .3s;
+      transition: 0.3s;
+      margin-top: -33px;
+      margin-left: 268px;
+      padding-left: 40px;
       &:hover {
         filter: brightness(1.2);
       }
       img {
-        border: solid 2px white;
+        border: solid 2px #eef0ef;
         border-radius: 50%;
+        margin-left: 23px;
+        transform: translateX(12px);
+        height: 100%;
       }
     }
     textarea {
@@ -402,7 +478,6 @@ p {
     }
   }
 }
-
 .footer {
   height: 170px;
   &__container {
@@ -416,6 +491,9 @@ p {
   &__info {
     display: flex;
     flex-direction: row;
+    width: 72.3%;
+    justify-content: space-between;
+    padding: 0 40px;
     &__start {
       display: flex;
       flex-direction: column;
@@ -449,11 +527,62 @@ p {
       color: @dark_gray;
       font-style: normal;
     }
+    &__separator {
+      border: none;
+      width: 1px;
+      background: @simple_gray;
+      height: 64px;
+      display: inline-block;
+    }
     &__social {
       strong {
         color: @dark_gray;
         font-family: SFBold;
+        a {
+          color: @simple_red;
+          font-size: 20px;
+
+        }
       }
     }
+    &__end,
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .dicas {
+    &__container {
+      .container;
+      margin-left: initial;
+    }
+    &__img {
+      width: ~"calc(50% - 80px)";
+    }
+    &__content {
+      width: ~"calc(50% - 40px)";
+    }
+  }
+  .header,
+  .inicio,
+  .sobre,
+  .depoimentos,
+  .contato,
+  .footer {
+    &__container {
+      .container;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
 }
